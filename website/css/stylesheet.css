@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+/* index mobil */
+h1 {
+    font-size: 25px;
+}
+.logo {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    width: 260px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 25px;
+}
