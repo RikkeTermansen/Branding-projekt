@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 img{
     max-width: 100%;
@@ -12,7 +13,6 @@ img{
 header {
     background-color: white;
 }
-
 header nav {
     display: flex;
     justify-content: space-between;
@@ -27,44 +27,38 @@ header a {
     text-decoration: none;
     color: black;
     padding: 10px;
-    font-family: Arial, Helvetica, sans-serif
 }
 .logo {
-    padding: 10px;
-    height: 80px;
+    height: 50px;
 }
-
-.toggleShow { /*Class brugt til at få menupunkterne vist ved klik på bars*/
+.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px; /*Placerer menuen under headeren */
+    top: 100px; /* Placerer menuen under headeren */
     left: 0;
     background-color:white;
     width: 100%;
     list-style-type: none;
     padding: 0;
-
 }    
 .toggleShow li,
 .toggleShow a {
         padding: 15px;
 }
-
 h1{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-align: center;
     text-transform: uppercase;
 }
-
-h2 {}
-
+.h2header {
+    font-size: 10px;
+    font-style: italic;
+}
 
 /* Main */
-
 .forsidebillede {
     height: 500px;
     position: relative;
@@ -75,65 +69,409 @@ h2 {}
     color: white;
     display: inline-block;
     text-align: center;
-    top:110px;
-    left:100px;
+    top: 110px;
+    left: 75px;
+    font-size: 25px;
 }
 .h3nr1 {
     position: absolute;
     padding-top: 130px;
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     display: inline-block;
     text-align: center;
-    top:150px;
-    left:45px;
+    top: 150px;
+    left: 35px;
 }
 .knap1 {
     position: absolute;
     text-decoration: none;
-    padding-top: 130px;
+    padding: 15px;
     color: white;
     font-size: 15px;
-    top:200px; 
+    top: 350px;
+    left: 100px;
+    border-style: solid;
 }
 .knap2 {
     position: absolute;
     text-decoration: none;
-    padding-top: 180px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 18px;
+    padding-right: 18px;
     color: white;
     font-size: 15px;
-    top: 200px;
-
+    top: 430px;
+    left: 100px;
+    border-style: solid;
 }
-.knap3{
+.knap3 {
+    position: absolute;
     text-decoration: none;
-    color: black;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 23px;
+    padding-right: 23px;
+    color: white;
     font-size: 15px;
-    top: 200px;
-
+    top: 510px;
+    left: 100px;
+    border-style: solid;
 }
 
-/*VIDEO HER */
+/* Indsæt video her */
 
 .sloganbillede {
     height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 .slogan {
     font-size: 30px;
+    margin-left: 30px;
 }
-
-
-
-
-footer{
+.team {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.h2team {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.pteam1, .pteam2, .pteam3 {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 35px;
+    line-height: 30px;
+    font-size: 14px;
+}
+.ghost {
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.kunder1 {
+    font-size: 15px;
+    margin-bottom: 5px;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.kunder2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-weight: lighter;
+}
+.kundelogo {
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 179px;
+}
+footer {
     background-color: #F8F8F8;
+    padding-top: 30px;
 }
-
+.footertekst {
+    margin-left: 130px;
+    line-height: 25px;
+}
 .some {
     height: 100px;
     padding-top: 25px;
     padding-bottom: 25px;
-    
+    margin-left: 130px;
 }
 
+
 /* Branding side mobil */
+
+/* Header */
+header {
+    background-color: white;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+}
+header ul {
+    display: none;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.logo {
+    height: 50px;
+}
+.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px; /* Placerer menuen under headeren */
+    left: 0;
+    background-color:white;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}    
+.toggleShow li,
+.toggleShow a {
+        padding: 15px;
+}
+h1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.h2header {
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* Main */
+.forsidebillede {
+    height: 500px;
+    position: relative;
+}
+.h2branding {
+    position: absolute;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    top: 300px;
+    left: 20px;
+    font-size: 40px;
+}
+.h2branding2 {
+    margin-top: 70px;
+    font-size: 20px;
+    margin-left: 35px;
+}
+.pbranding1, .pbranding2, .pbranding3, .pbranding4 {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 30px;
+    font-size: 14px;
+    text-align: center;
+}
+.h2cases {
+    margin-top: 100px;
+    margin-left: 50px;
+    font-weight: lighter;
+}
+.casesimg {
+    height: 300px;
+    margin-top: 30px;
+    margin-left: 70px;
+}
+.callusbillede {
+    height: 200px;
+    margin-top: 130px;
+}
+.callusspan1 {
+    margin-left: 95px;
+    font-size: 15px;
+}
+.callusspan2 {
+    margin-left: 55px;
+    font-size: 35px;
+    font-weight: bold;
+}
+footer {
+    background-color: #F8F8F8;
+    padding-top: 30px;
+}
+.footertekst {
+    margin-left: 130px;
+    line-height: 25px;
+}
+.some {
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 130px;
+}
+
+/* Forside desktop */
+@media screen and (min-width: 700px) {
+    
+    /* Header */
+    .logo {
+        height: 70px;
+    }
+
+    /* Main */
+    .forsidebillede {
+        height: 570px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .h2nr2 {
+        padding-top: 60px;
+        top: 110px;
+        left: 100px;
+        font-size: 30px;
+    }
+    .h3nr1 {
+        padding-top: 100px;
+        font-size: 20px;
+        top: 150px;
+        left: 100px;
+    }
+    .knap1 {
+        padding: 25px;
+        font-size: 25px;
+        top: 500px;
+        left: 100px;
+    }
+    .knap2 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 29px;
+        padding-right: 29px;
+        font-size: 25px;
+        top: 500px;
+        left: 600px;
+    }
+    .knap3 {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 37px;
+        padding-right: 37px;
+        font-size: 25px;
+        top: 500px;
+        left: 1050px;
+    }
+    .sloganbillede {
+        height: 250px;
+        width: 100%;
+    }
+    .slogan {
+        font-size: 40px;
+        margin-left: 500px;
+    }
+    .team {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+    .h2team {
+        margin-bottom: 20px;
+        margin-left: 900px;
+    }
+    .pteam1, .pteam2, .pteam3 {
+        margin-left: 900px;
+        margin-right: 40px;
+        margin-bottom: 35px;
+        line-height: 50px;
+        font-size: 15px;
+    }
+    .ghost {
+        height: 50px;
+        margin-left: 350px;
+    }
+    .kunder1 {
+        font-size: 20px;
+        margin-bottom: 10px;
+        margin-left: 350px;
+    }
+    .kunder2 {
+        font-size: 35px;
+        margin-bottom: 50px;
+        margin-left: 350px;
+    }
+    .kundelogo {
+        margin-bottom: 150px;
+        margin-left: 350px;
+        height: 400px;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    .footertekst {
+        margin-left: 130px;
+        line-height: 25px;
+    }
+    .some {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 650px;
+    }
+}
+
+/* Branding side desktop */
+@media screen and (min-width: 700px) {
+    
+    /* Header */
+    .logo {
+        height: 70px;
+    }
+
+    /* Main */
+    .forsidebillede {
+        height: 570px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .h2branding {
+        top: 350px;
+        left: 430px;
+        font-size: 60px;
+    }
+    .h2branding2 {
+        margin-top: 150px;
+        margin-bottom: 80px;
+        font-size: 40px;
+        text-align: center;
+    }
+    .pbranding1, .pbranding2, .pbranding3, .pbranding4 {
+        margin-top: 30px;
+        margin-left: 250px;
+        margin-right: 250px;
+        line-height: 40px;
+        font-size: 15px;
+    }
+    .h2cases {
+        margin-top: 200px;
+        margin-left: 70px;
+    }
+    .casesimg {
+        height: 420px;
+        margin-top: 30px;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    .callusbillede {
+        height: 250px;
+        width: 100%;
+        margin-top: 250px;
+    }
+    .callusspan1 {
+        margin-left: 600px;
+        font-size: 20px;
+    }
+    .callusspan2 {
+        margin-left: 500px;
+        font-size: 60px;
+    }
+    footer {
+        padding-top: 30px;
+    }
+    .footertekst {
+        margin-left: 130px;
+        line-height: 25px;
+    }
+    .some {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 650px;
+    }
+}
