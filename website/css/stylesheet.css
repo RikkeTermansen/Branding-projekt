@@ -123,13 +123,17 @@ h1{
 /* Indsæt video her */
 
 .sloganbillede {
+    position: relative;
     height: 200px;
     margin-top: 40px;
     margin-bottom: 40px;
 }
 .slogan {
-    font-size: 30px;
+    position: absolute;
+    font-size: 25px;
     margin-left: 30px;
+    left: 28px;
+    top: 730px;
 }
 .team {
     margin-top: 50px;
@@ -276,15 +280,24 @@ h1 {
 .callusbillede {
     height: 200px;
     margin-top: 130px;
+    position: relative;
 }
 .callusspan1 {
     margin-left: 95px;
     font-size: 15px;
+    color: white;
+    position: absolute;
+    top: 2450px;
+    left: 1px;
 }
 .callusspan2 {
     margin-left: 55px;
     font-size: 35px;
     font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 2500px;
+    left: 1px;
 }
 footer {
     background-color: #F8F8F8;
@@ -358,6 +371,8 @@ footer {
     .slogan {
         font-size: 40px;
         margin-left: 500px;
+        left: 25px;
+        top: 815px;
     }
     .team {
         margin-top: 100px;
@@ -422,9 +437,9 @@ footer {
         margin-right: 30px;
     }
     .h2branding {
-        top: 350px;
-        left: 430px;
-        font-size: 60px;
+        top: 500px;
+        left: 130px;
+        font-size: 80px;
     }
     .h2branding2 {
         margin-top: 150px;
@@ -457,10 +472,12 @@ footer {
     .callusspan1 {
         margin-left: 600px;
         font-size: 20px;
+        top: 2225px;
     }
     .callusspan2 {
         margin-left: 500px;
         font-size: 60px;
+        top: 2280px;
     }
     footer {
         padding-top: 30px;
