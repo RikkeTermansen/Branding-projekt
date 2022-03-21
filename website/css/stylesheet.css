@@ -314,6 +314,192 @@ footer {
     margin-left: 130px;
 }
 
+/* Kontakt side mobil */
+
+/* Header */
+header {
+    background-color: white;
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 10px;
+}
+header ul {
+    display: none;
+}
+header a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.logo {
+    height: 50px;
+}
+.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 100px; /* Placerer menuen under headeren */
+    left: 0;
+    background-color:white;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+}    
+.toggleShow li,
+.toggleShow a {
+        padding: 15px;
+}
+h1 {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+.h2header {
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* Main */
+.forsidebillede {
+    height: 500px;
+    position: relative;
+    width: 100%;
+}
+.h2kontakt{
+    position: absolute;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    top: 300px;
+    left: 20px;
+    font-size: 40px;
+}
+
+.telefonboks {
+    background-color: #FFC9FE;
+    width: 170px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 15px;
+    float: left;
+}
+.telefonikon {
+    height: 120px;
+    padding: 20px;
+}
+.telefonp1 {
+    padding-top: 40px;
+    font-size: 18px;
+}
+.telefonp2{
+    padding-top: 20px;
+    font-size: 12px;
+}
+
+.mailboks {
+    background-color: #DFFFE3;
+    width: 170px;
+    margin-top: 30px;
+    text-align: center;
+    padding: 20px;
+    float: right;
+    margin-right: 25px;
+}
+.mailikon {
+    height: 120px;
+    padding: 20px;
+}
+.mailp1 {
+    padding-top: 40px;
+    font-size: 18px;
+}
+.mailp2 {
+    padding-top: 38px;
+    font-size: 12px;
+}
+
+.bygningboks {
+    background-color: #FFFFA8;
+    width: 170px;
+    margin-top: 350px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 110px;
+    margin-right: 110px;
+    
+}
+.bygningikon {
+    height: 120px;
+    padding: 20px;
+}
+.bygningp1 {
+    padding-top: 40px;
+    font-size: 18px;
+}
+.bygningp2 {
+    padding-top: 20px;
+    font-size: 12px;
+}
+input[type=text], select, textarea {
+    width: 100%; 
+    padding: 12px;
+    border: 1px solid #ccc; 
+    border-radius: 20px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: vertical;
+  }
+
+  .pformular {
+      font-size: 15px;
+      padding-bottom: 15px;
+  
+  }
+  input[type=blivringetop] {
+    background-color: #FFC9FE;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 20px;
+    width: 120px;
+
+  }
+  
+  input[type=blivringetop]:hover {
+    background-color: #FFC9FE;
+  }
+  .container {
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    padding: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 100px;
+    margin-top: 40px;
+  }
+.kontaktfooter {
+    background-color: #F8F8F8;
+    padding-top: 30px;
+}
+.footertekstkontakt {
+    margin-left: 130px;
+    line-height: 25px;
+}
+.somekontakt {
+    height: 100px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 130px;
+}
+
 /* Forside desktop */
 @media screen and (min-width: 700px) {
     
@@ -491,4 +677,116 @@ footer {
         padding-bottom: 25px;
         margin-left: 650px;
     }
+}
+
+/* Kontakt side desktop */
+@media screen and (min-width: 700px) {
+ 
+/* Header */
+ .logo {
+    height: 70px;
+}
+
+/* Main */
+.forsidebillede {
+    height: 570px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.h2kontakt {
+    top: 500px;
+    left: 130px;
+    font-size: 80px;
+}
+.telefonboks {
+    width: 300px;
+    height: 550px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 150px;
+    float: left;
+
+}
+.telefonikon{
+height: 200px;
+padding: 20px;
+}
+.telefonp1 {
+    padding-top: 60px;
+    font-size: 30px;
+}
+.telefonp2{
+    padding-top: 70px;
+    font-size: 20px;
+}
+.mailboks {
+    width: 300px;
+    height: 550px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 100px;
+    float: left;
+
+}
+.mailikon{
+height: 200px;
+padding: 20px;
+}
+.mailp1 {
+    padding-top: 60px;
+    font-size: 30px;
+}
+.mailp2{
+    padding-top: 90px;
+    font-size: 20px;
+}
+.bygningboks {
+    width: 300px;
+    height: 550px;
+    margin-top: 100px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 80px;
+    float: left;
+}
+.bygningikon{
+height: 200px;
+padding: 20px;
+}
+.bygningp1 {
+    padding-top: 62px;
+    font-size: 30px;
+}
+.bygningp2{
+    padding-top: 30px;
+    font-size: 20px;
+}
+.pformular {
+    font-size: 22px;
+    padding-bottom: 15px; 
+    text-align: center;
+}
+
+  .container {
+    padding: 30px;
+    margin-right: 70px;
+    margin-left: 150px;
+    margin-bottom: 150px;
+    margin-top: 750px;
+  }
+
+footer {
+    padding-top: 30px;
+}
+.footertekst {
+    margin-left: 130px;
+    line-height: 25px;
+}
+.some {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 650px;
+}
 }

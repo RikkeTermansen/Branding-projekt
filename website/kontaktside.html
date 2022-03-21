@@ -11,9 +11,13 @@
 <body>
     <header>
         <nav>
-            <img src="../website/img/logo.png" alt="logo">
+            <a href="index.html">
+            <img class="logo" src ="../website/img/logo.png" alt="logo">
+            </a>
+            <!--Bars icon-->
+            <i class="fas fa-bars"></i> <!-- i.fas.fa-bars + enter (bars udskiftes alt efter ikon)-->
             <h1>Ghost Media</h1>
-            <h2>digital agency</h2>
+            <h2 class="h2header">digital agency</h2>
             <ul>
                 <li>
                     <a href="#">CASES</a>
@@ -31,34 +35,59 @@
         </nav>
     </header>
     <section>
-        <img src="../website/img/kontakt baggrund.png" alt="Baggrunds billede">
-        <h2>Kontakt</h2>
+        <img class="forsidebillede" src="../website/img/kontakt baggrund.png" alt="Baggrunds billede">
+        <h2 class="h2kontakt">Kontakt</h2>
     </section>
-    <div>
-        <img src="../website/img/telefonikon.png" alt="Telefon ikon">
-        <span>Giv os et kald</span>
-        <span>+45 53 83 22 22</span>
+    <div class="telefonboks">
+        <img class="telefonikon" src="../website/img/telefonikon.png" alt="Telefon ikon">
+        <br>
+        <p class="telefonp1">Giv os et kald</p>
+        <br>
+        <p class="telefonp2">+45 53 83 22 22</p>
     </div>
-    <div>
-        <img src="../website/img/mailikon.png" alt="Mail ikon">
-        <span>Send os en mail</span>
-        <span>ghost@media.dk</span>
+    <div class="mailboks">
+        <img class="mailikon" src="../website/img/mailikon.png" alt="Mail ikon">
+        <br>
+        <p class="mailp1">Send os en mail</p>
+        <p class="mailp2">ghost@media.dk</p>
     </div>
-    <div>
-        <img src="../website/img/bygningikon.png" alt="Bygning ikon">
-        <span>Kig forbi vores kontor</span>
-        <span>Havneparken 1, 6000 Kolding</span>
+    <div class="bygningboks">
+        <img class="bygningikon" src="../website/img/bygningikon.png" alt="Bygning ikon">
+        <br>
+        <p class="bygningp1">Kig forbi vores kontor</p>
+        <br>
+        <p class="bygningp2">Havneparken 1, 6000 Kolding</p>
     </div>
-    <article>
-        <!--Indsæt kontrakt formular her-->
-    </article>
+     <div class="container">
+            <p class="pformular">Udfyld formularen nedenfor, så ringer vi dig op til en uforpligtende snak</p>
+
+            <form action="action_page.php">
+          
+              <input type="text" id="navn" name="Navn" placeholder="Navn">
+          
+              <input type="text" id="virksomhed" name="virksomhed" placeholder="Virksomhed">
+          
+              <input type="text" id="telefonnummer" name="telefonnummer" placeholder="Telefonnummer">
+          
+              <textarea id="hjælp" name="hjælp" placeholder="Fortæl os, hvad vi kan hjælpe dig med ..." style="height:200px"></textarea>
+          
+              <input type="blivringetop" value="Bliv ringet op">
+          
+            </form>
+    </div>
+    
     <footer>
-        <span>GHOST MEDIA</span>
-        <span>+45 53 83 22 22</span>
-        <span>Havneparken 1</span>
-        <span>6000 Kolding</span>
-        <span>ghost@media.dk</span>
-        <img src="../website/img/someikoner.png" alt="SoMe ikoner">
+        <span class="footertekst">GHOST MEDIA</span>
+        <br>
+        <span class="footertekst">+45 53 83 22 22</span>
+        <br>
+        <span class="footertekst">Havneparken 1</span>
+        <br>
+        <span class="footertekst">6000 Kolding</span>
+        <br>
+        <span class="footertekst">ghost@media.dk</span>
+        <br>
+        <img class="some" src="../website/img/someikoner.png" alt="SoMe ikoner">
     </footer>
     <script>
         const navbarToggle = () => {
