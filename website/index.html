@@ -4,21 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="../website/css/stylesheet.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="icon" href="../website/img/logo.png" type="image/png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ghost Media</title>
 </head>
 <body>
     <header>
         <nav>
-            <a href="index.html">
-            <img class="logo" src ="../website/img/logo.png" alt="logo">
-            </a>
-            <!--Bars icon-->
-            <i class="fas fa-bars"></i> <!-- i.fas.fa-bars + enter (bars udskiftes alt efter ikon)-->
-            <h1>Ghost Media</h1>
-            <h2 class="h2header">digital agency</h2>
-            <ul>
+            <div class="brand">
+                <a href="index.html">
+                    <img class="logo" src ="../website/img/logo.png" alt="logo">
+                </a>
+                <h1>Ghost Media</h1>
+                <h2 class="h2header">digital agency</h2>
+            </div>
+            <i class="fas fa-bars"></i>
+            <ul class="mainnav">
                 <li>
                     <a href="#">CASES</a>
                 </li>
@@ -29,58 +34,60 @@
                     <a href="#">OM GHOST</a>
                 </li>
                 <li>
-                    <a href="#">KONTAKT</a>
+                    <a href="../website/kontaktside.html">KONTAKT</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <section>
-        <img class="forsidebillede" src="../website/img/index baggrund.png" alt="Baggrunds billede">
-        <h2 class="h2nr2">Løbet tør for ideer?</h2>
-        <h3 class="h3nr1">Vi kan hjælpe dig og din virksomhed godt på vej</h3>
-        <a class="knap1" href="../website/produktside.html">Design og branding</a>
-        <a class="knap2" href="#">Koder og websites</a>
-        <a class="knap3" href="#">Online marketing</a>
-    </section>
-    <div>
-        <!--Indsæt video her-->
-    </div>
-    <div>
-        <img class="sloganbillede" src="../website/img/slogan baggrund.png" alt="Baggrunds billede">
-        <span class="slogan">Vi designer din identitet</span>
-    </div>
-    <article class="team">
-        <!--Indsæt billede af os her-->
-        <h2 class="h2team">TEAM GHOST MEDIA</h2>
-        <p class="pteam1">Et nytænkende multimedie-bureau. Vi hjælper din virksomhed med at finde sin identitet.</p>
-        <p class="pteam2">Har du brug for et nyt logo, en unik designet hjemmeside eller en reklamevideo? Så tøv ikke med at tage kontakt til os, så vi i fælleskab kan få skabt din virksomheds identitet.</p>
-        <p class="pteam3">Lær os bedre at kende her</p>
-    </article>
-    <section>
-        <img class="ghost" src="../website/img/logo.png" alt="Logo">
-        <h2 class="kunder1">Vores kære kunder</h2>
-        <h3 class="kunder2">Bliv inspireret</h3>
-        <img class="kundelogo" src="../website/img/kundelogo.png" alt="Kunde logoer">
-    </section>
-    <footer>
-        <span class="footertekst">GHOST MEDIA</span>
-        <br>
-        <span class="footertekst">+45 53 83 22 22</span>
-        <br>
-        <span class="footertekst">Havneparken 1</span>
-        <br>
-        <span class="footertekst">6000 Kolding</span>
-        <br>
-        <span class="footertekst">ghost@media.dk</span>
-        <br>
-        <img class="some" src="../website/img/someikoner.png" alt="SoMe ikoner">
-    </footer>
     <script>
         const navbarToggle = () => {
-        const nav = document.querySelector('.mainnav');
-        nav.classList.toggle('toggleShow');
+            const nav = document.querySelector('.mainnav');
+            nav.classList.toggle('toggleShow');
         }
         document.querySelector('.fa-bars').addEventListener('click', navbarToggle);
     </script>
+    <main>
+        <section class="forsidebillede">
+            <h2>Løbet tør for ideer?</h2>
+            <h3>Vi kan hjælpe dig og din virksomhed godt på vej</h3>
+            <div class="tilbud">
+                <a href="../website/produktside.html">Design og branding</a>
+                <a href="#">Koder og websites</a>
+                <a href="#">Online marketing</a>
+            </div>
+        </section>
+        <div>
+            <video class="video" controls autoplay muted>
+                <source src="../Bilag/ghost.final.mp4" type="video/mp4">
+                <p>Din browser understøtter ikke videoen</p>
+            </video>
+        </div>
+        <div>
+            <img class="sloganbillede" src="../website/img/slogan baggrund.png" alt="Baggrunds billede">
+            <span class="slogan">Vi designer din identitet</span>
+        </div>
+        <article class="team">
+            <h2 class="h2team">TEAM <strong> GHOST MEDIA </strong></h2>
+            <p class="pteam1">Et nytænkende multimedie-bureau. Vi hjælper din virksomhed med at finde sin identitet.</p>
+            <p class="pteam2">Har du brug for et nyt logo, en unik designet hjemmeside eller en reklamevideo? <br> Så tøv ikke med at tage kontakt til os, så vi i fælleskab kan få skabt din virksomheds identitet.</p>
+            <p class="pteam3">Lær os bedre at kende <strong> her </strong></p>
+        </article>
+        <section>
+            <img class="ghost" src="../website/img/logo.png" alt="Logo">
+            <h2 class="kunder1">Vores kære kunder</h2>
+            <h3 class="kunder2">Bliv inspireret</h3>
+            <img class="kundelogo" src="../website/img/kundelogo.png" alt="Kunde logoer">
+        </section>
+    </main>
+    <footer>
+        <address>
+            <span>GHOST MEDIA</span>
+            <span>+45 53 83 22 22</span>
+            <span>Havneparken 1</span>
+            <span>6000 Kolding</span>
+            <span>ghost@media.dk</span>
+        </address>
+        <img class="some" src="img/someikoner.png" alt="SoMe ikoner">
+    </footer>
 </body>
 </html>

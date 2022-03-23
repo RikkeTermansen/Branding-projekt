@@ -1,18 +1,42 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Mulish', sans-serif;
 }
-img{
+img {
     max-width: 100%;
 }
-
-/* Forside mobil */
-
-/* Header */
 header {
     background-color: white;
 }
+main {
+    max-width: 100%;
+}
+
+/* Footer mobil */
+footer { 
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #F8F8F8;
+}
+address {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    line-height: 25px;
+}
+.some {
+    padding-top: 25px;
+    height: 75px;
+}
+
+/* Forside mobil */
+/* Header */
 header nav {
     display: flex;
     justify-content: space-between;
@@ -20,8 +44,12 @@ header nav {
     height: 100px;
     padding: 0 10px;
 }
-header ul {
-    display: none;
+.brand {
+    display: flex;
+    align-items: center;
+}
+.h2header {
+    margin-left: 10px;
 }
 header a {
     text-decoration: none;
@@ -31,12 +59,15 @@ header a {
 .logo {
     height: 50px;
 }
-.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
+header ul {
+    display: none;
+}
+.toggleShow {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    top: 100px; /* Placerer menuen under headeren */
+    top: 100px;
     left: 0;
     background-color:white;
     width: 100%;
@@ -45,9 +76,9 @@ header a {
 }    
 .toggleShow li,
 .toggleShow a {
-        padding: 15px;
+    padding: 15px;
 }
-h1{
+h1 {
     font-size: 20px;
     color: black;
     text-align: center;
@@ -57,75 +88,60 @@ h1{
     font-size: 10px;
     font-style: italic;
 }
-
 /* Main */
 .forsidebillede {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/index\ baggrund.png);
+    background-size: cover;
     height: 500px;
-    position: relative;
+    padding: 30px;
 }
-.h2nr2 {
-    position: absolute;
-    padding-top: 110px;
+.forsidebillede h2 {
     color: white;
     display: inline-block;
     text-align: center;
-    top: 110px;
-    left: 75px;
     font-size: 25px;
+    margin-top: auto;
+    margin-bottom: 30px;
 }
-.h3nr1 {
-    position: absolute;
-    padding-top: 130px;
+.forsidebillede h3 {
     color: white;
     font-size: 13px;
     display: inline-block;
-    text-align: center;
-    top: 150px;
-    left: 35px;
+    margin-bottom: auto;
+    font-weight: lighter;
 }
-.knap1 {
-    position: absolute;
+.forsidebillede .tilbud {
+    margin-top: auto;
+    width: 65%;
+}
+.forsidebillede a {
     text-decoration: none;
+    margin: 10px;
     padding: 15px;
     color: white;
     font-size: 15px;
-    top: 350px;
-    left: 100px;
     border-style: solid;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.knap2 {
-    position: absolute;
-    text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 18px;
-    padding-right: 18px;
-    color: white;
-    font-size: 15px;
-    top: 430px;
-    left: 100px;
-    border-style: solid;
+video {
+    display: block;
+    margin: auto;
+    margin-top: 50px;
+    width: 360px;
+    height: 220px;
 }
-.knap3 {
-    position: absolute;
-    text-decoration: none;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 23px;
-    padding-right: 23px;
-    color: white;
-    font-size: 15px;
-    top: 510px;
-    left: 100px;
-    border-style: solid;
-}
-
-/* Indsæt video her */
-
 .sloganbillede {
     position: relative;
     height: 200px;
-    margin-top: 40px;
+    margin-top: 50px;
     margin-bottom: 40px;
 }
 .slogan {
@@ -133,19 +149,21 @@ h1{
     font-size: 25px;
     margin-left: 30px;
     left: 28px;
-    top: 730px;
+    top: 136.5%;
 }
 .team {
     margin-top: 50px;
     margin-bottom: 50px;
 }
 .h2team {
-    margin-bottom: 20px;
-    margin-left: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: lighter;
 }
 .pteam1, .pteam2, .pteam3 {
-    margin-left: 20px;
-    margin-right: 20px;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
     margin-bottom: 35px;
     line-height: 30px;
     font-size: 14px;
@@ -171,26 +189,14 @@ h1{
     margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
-    height: 179px;
-}
-footer {
-    background-color: #F8F8F8;
-    padding-top: 30px;
+    height: 170px;
 }
 .footertekst {
     margin-left: 130px;
     line-height: 25px;
 }
-.some {
-    height: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 130px;
-}
-
 
 /* Branding side mobil */
-
 /* Header */
 header {
     background-color: white;
@@ -202,48 +208,21 @@ header nav {
     height: 100px;
     padding: 0 10px;
 }
-header ul {
-    display: none;
-}
 header a {
     text-decoration: none;
     color: black;
     padding: 10px;
 }
-.logo {
-    height: 50px;
-}
-.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
+/* Main */
+.forsidebilledeProdukt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 100px; /* Placerer menuen under headeren */
-    left: 0;
-    background-color:white;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-}    
-.toggleShow li,
-.toggleShow a {
-        padding: 15px;
-}
-h1 {
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-}
-.h2header {
-    font-size: 10px;
-    font-style: italic;
-}
-
-/* Main */
-.forsidebillede {
+    justify-content: center;
+    background-image: url(../img/produkt\ baggrund.png);
+    background-size: cover;
     height: 500px;
-    position: relative;
+    padding: 30px;
 }
 .h2branding {
     position: absolute;
@@ -251,13 +230,12 @@ h1 {
     display: inline-block;
     text-align: center;
     top: 300px;
-    left: 20px;
     font-size: 40px;
 }
 .h2branding2 {
     margin-top: 70px;
     font-size: 20px;
-    margin-left: 35px;
+    text-align: center;
 }
 .pbranding1, .pbranding2, .pbranding3, .pbranding4 {
     margin-top: 30px;
@@ -275,7 +253,7 @@ h1 {
 .casesimg {
     height: 300px;
     margin-top: 30px;
-    margin-left: 70px;
+    margin-left: 60px;
 }
 .callusbillede {
     height: 200px;
@@ -299,23 +277,8 @@ h1 {
     top: 2500px;
     left: 1px;
 }
-footer {
-    background-color: #F8F8F8;
-    padding-top: 30px;
-}
-.footertekst {
-    margin-left: 130px;
-    line-height: 25px;
-}
-.some {
-    height: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 130px;
-}
 
 /* Kontakt side mobil */
-
 /* Header */
 header {
     background-color: white;
@@ -327,67 +290,37 @@ header nav {
     height: 100px;
     padding: 0 10px;
 }
-header ul {
-    display: none;
-}
 header a {
     text-decoration: none;
     color: black;
     padding: 10px;
 }
-.logo {
-    height: 50px;
-}
-.toggleShow { /* Class brugt til at få menupunkterne vist ved klik på bars */
+/* Main */
+.forsidebilledeKontakt {
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
-    top: 100px; /* Placerer menuen under headeren */
-    left: 0;
-    background-color:white;
-    width: 100%;
-    list-style-type: none;
-    padding: 0;
-}    
-.toggleShow li,
-.toggleShow a {
-        padding: 15px;
-}
-h1 {
-    font-size: 20px;
-    color: black;
-    text-align: center;
-    text-transform: uppercase;
-}
-.h2header {
-    font-size: 10px;
-    font-style: italic;
-}
-
-/* Main */
-.forsidebillede {
+    justify-content: center;
+    background-image: url(../img/kontakt\ baggrund.png);
+    background-size: cover;
     height: 500px;
-    position: relative;
-    width: 100%;
+    padding: 30px;
 }
-.h2kontakt{
+.h2kontakt {
     position: absolute;
     color: white;
     display: inline-block;
     text-align: center;
-    top: 300px;
-    left: 20px;
+    top: 330px;
     font-size: 40px;
 }
-
 .telefonboks {
     background-color: #FFC9FE;
     width: 170px;
     margin-top: 30px;
     text-align: center;
     padding: 20px;
-    margin-left: 15px;
+    margin-left: 95px;
     float: left;
 }
 .telefonikon {
@@ -398,49 +331,46 @@ h1 {
     padding-top: 40px;
     font-size: 18px;
 }
-.telefonp2{
+.telefonp2 {
     padding-top: 20px;
     font-size: 12px;
 }
-
 .mailboks {
     background-color: #DFFFE3;
     width: 170px;
     margin-top: 30px;
     text-align: center;
     padding: 20px;
-    float: right;
-    margin-right: 25px;
+    float: left;
+    margin-left: 95px;
 }
 .mailikon {
-    height: 120px;
+    height: 100px;
     padding: 20px;
 }
 .mailp1 {
-    padding-top: 40px;
+    padding-top: 55px;
     font-size: 18px;
 }
 .mailp2 {
     padding-top: 38px;
     font-size: 12px;
 }
-
 .bygningboks {
     background-color: #FFFFA8;
     width: 170px;
-    margin-top: 350px;
+    margin-top: 30px;
     text-align: center;
     padding: 20px;
-    margin-left: 110px;
-    margin-right: 110px;
-    
+    float: left;
+    margin-left: 95px;
 }
 .bygningikon {
     height: 120px;
     padding: 20px;
 }
 .bygningp1 {
-    padding-top: 40px;
+    padding-top: 30px;
     font-size: 18px;
 }
 .bygningp2 {
@@ -456,124 +386,96 @@ input[type=text], select, textarea {
     margin-top: 6px; 
     margin-bottom: 16px; 
     resize: vertical;
-  }
-
-  .pformular {
-      font-size: 15px;
-      padding-bottom: 15px;
-  
-  }
-  input[type=blivringetop] {
+}
+.pformular {
+    font-size: 15px;
+    padding-bottom: 15px;
+}
+input[type=submit] {
     background-color: #FFC9FE;
     color: black;
     padding: 12px 20px;
     border: none;
     border-radius: 20px;
     width: 120px;
-
-  }
-  
-  input[type=blivringetop]:hover {
+}
+input[type=blivringetop]:hover {
     background-color: #FFC9FE;
-  }
-  .container {
+}
+.container {
     border-radius: 5px;
     background-color: #f8f8f8;
     padding: 30px;
     margin-right: 20px;
     margin-left: 20px;
     margin-bottom: 100px;
-    margin-top: 40px;
-  }
-.kontaktfooter {
-    background-color: #F8F8F8;
-    padding-top: 30px;
-}
-.footertekstkontakt {
-    margin-left: 130px;
-    line-height: 25px;
-}
-.somekontakt {
-    height: 100px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 130px;
+    margin-top: 280%;
 }
 
-/* Forside desktop */
-@media screen and (min-width: 700px) {
-    
-    /* Header */
+@media screen and (min-width: 740px) {
     .logo {
         height: 70px;
     }
-
-    /* Main */
-    .forsidebillede {
+    .fa-bars {
+        display: none;
+    }
+    .mainnav {
+        display: flex;
+        padding: 10px;
+        list-style-type: none;
+    }
+    .forsidebillede, .forsidebilledeKontakt, .forsidebilledeProdukt {
         height: 570px;
         margin-left: 30px;
         margin-right: 30px;
     }
-    .h2nr2 {
-        padding-top: 60px;
-        top: 110px;
-        left: 100px;
-        font-size: 30px;
+    .forsidebillede h2 {
+        font-size: 40px;
     }
-    .h3nr1 {
-        padding-top: 100px;
-        font-size: 20px;
-        top: 150px;
-        left: 100px;
-    }
-    .knap1 {
-        padding: 25px;
+    .forsidebillede h3 {
         font-size: 25px;
-        top: 500px;
-        left: 100px;
     }
-    .knap2 {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 29px;
-        padding-right: 29px;
+    .forsidebillede a {
         font-size: 25px;
-        top: 500px;
-        left: 600px;
     }
-    .knap3 {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 37px;
-        padding-right: 37px;
-        font-size: 25px;
-        top: 500px;
-        left: 1050px;
+    .forsidebillede .tilbud {
+        width: 85%;
+        padding: 30px;
+        display: flex;
+        flex-direction: row;
+    }
+    .tilbud a {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    video {
+        width: 720px;
+        height: 440px;
+        margin-top: 100px;
     }
     .sloganbillede {
         height: 250px;
         width: 100%;
+        margin-top: 100px;
     }
     .slogan {
         font-size: 40px;
         margin-left: 500px;
         left: 25px;
-        top: 815px;
+        top: 201%;
     }
     .team {
         margin-top: 100px;
         margin-bottom: 100px;
     }
     .h2team {
-        margin-bottom: 20px;
-        margin-left: 900px;
+        font-size: 40px;
+        margin-bottom: 60px;
     }
     .pteam1, .pteam2, .pteam3 {
-        margin-left: 900px;
-        margin-right: 40px;
         margin-bottom: 35px;
         line-height: 50px;
-        font-size: 15px;
+        font-size: 20px;
     }
     .ghost {
         height: 50px;
@@ -594,34 +496,6 @@ input[type=text], select, textarea {
         margin-left: 350px;
         height: 400px;
     }
-    footer {
-        padding-top: 30px;
-    }
-    .footertekst {
-        margin-left: 130px;
-        line-height: 25px;
-    }
-    .some {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-left: 650px;
-    }
-}
-
-/* Branding side desktop */
-@media screen and (min-width: 700px) {
-    
-    /* Header */
-    .logo {
-        height: 70px;
-    }
-
-    /* Main */
-    .forsidebillede {
-        height: 570px;
-        margin-left: 30px;
-        margin-right: 30px;
-    }
     .h2branding {
         top: 500px;
         left: 130px;
@@ -631,12 +505,12 @@ input[type=text], select, textarea {
         margin-top: 150px;
         margin-bottom: 80px;
         font-size: 40px;
-        text-align: center;
     }
     .pbranding1, .pbranding2, .pbranding3, .pbranding4 {
         margin-top: 30px;
-        margin-left: 250px;
-        margin-right: 250px;
+        text-align: center;
+        margin-left: 200px;
+        margin-right: 200px;
         line-height: 40px;
         font-size: 15px;
     }
@@ -658,135 +532,96 @@ input[type=text], select, textarea {
     .callusspan1 {
         margin-left: 600px;
         font-size: 20px;
-        top: 2225px;
+        top: 315%;
     }
     .callusspan2 {
         margin-left: 500px;
         font-size: 60px;
-        top: 2280px;
+        top: 323%;
     }
-    footer {
+    .h2kontakt {
+        top: 500px;
+        left: 130px;
+        font-size: 80px;
+    }
+    .telefonboks {
+        width: 300px;
+        height: 550px;
+        margin-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 165px;
+        float: left;
+    }
+    .telefonikon {
+        height: 200px;
+        padding: 20px;
+    }
+    .telefonp1 {
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .telefonp2 {
+        padding-top: 70px;
+        font-size: 20px;
+    }
+    .mailboks {
+        width: 300px;
+        height: 550px;
+        margin-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 100px;
+        float: left;
+    }
+    .mailikon {
+        height: 200px;
+        padding: 20px;
+    }
+    .mailp1 {
+        padding-top: 60px;
+        font-size: 30px;
+    }
+    .mailp2 {
+        padding-top: 90px;
+        font-size: 20px;
+    }
+    .bygningboks {
+        width: 300px;
+        height: 550px;
+        margin-top: 100px;
+        text-align: center;
+        padding: 20px;
+        margin-left: 100px;
+        float: left;
+    }
+    .bygningikon {
+        height: 200px;
+        padding: 20px;
+    }
+    .bygningp1 {
+        padding-top: 62px;
+        font-size: 30px;
+    }
+    .bygningp2 {
         padding-top: 30px;
+        font-size: 20px;
     }
-    .footertekst {
-        margin-left: 130px;
-        line-height: 25px;
+    .pformular {
+        font-size: 22px;
+        padding-bottom: 15px; 
+        text-align: center;
     }
-    .some {
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-left: 650px;
+    .container {
+        padding: 30px;
+        margin-right: 150px;
+        margin-left: 150px;
+        margin-bottom: 150px;
+        margin-top: 750px;
     }
-}
-
-/* Kontakt side desktop */
-@media screen and (min-width: 700px) {
- 
-/* Header */
- .logo {
-    height: 70px;
-}
-
-/* Main */
-.forsidebillede {
-    height: 570px;
-    margin-left: 30px;
-    margin-right: 30px;
-}
-.h2kontakt {
-    top: 500px;
-    left: 130px;
-    font-size: 80px;
-}
-.telefonboks {
-    width: 300px;
-    height: 550px;
-    margin-top: 100px;
-    text-align: center;
-    padding: 20px;
-    margin-left: 150px;
-    float: left;
-
-}
-.telefonikon{
-height: 200px;
-padding: 20px;
-}
-.telefonp1 {
-    padding-top: 60px;
-    font-size: 30px;
-}
-.telefonp2{
-    padding-top: 70px;
-    font-size: 20px;
-}
-.mailboks {
-    width: 300px;
-    height: 550px;
-    margin-top: 100px;
-    text-align: center;
-    padding: 20px;
-    margin-left: 100px;
-    float: left;
-
-}
-.mailikon{
-height: 200px;
-padding: 20px;
-}
-.mailp1 {
-    padding-top: 60px;
-    font-size: 30px;
-}
-.mailp2{
-    padding-top: 90px;
-    font-size: 20px;
-}
-.bygningboks {
-    width: 300px;
-    height: 550px;
-    margin-top: 100px;
-    text-align: center;
-    padding: 20px;
-    margin-left: 80px;
-    float: left;
-}
-.bygningikon{
-height: 200px;
-padding: 20px;
-}
-.bygningp1 {
-    padding-top: 62px;
-    font-size: 30px;
-}
-.bygningp2{
-    padding-top: 30px;
-    font-size: 20px;
-}
-.pformular {
-    font-size: 22px;
-    padding-bottom: 15px; 
-    text-align: center;
-}
-
-  .container {
-    padding: 30px;
-    margin-right: 70px;
-    margin-left: 150px;
-    margin-bottom: 150px;
-    margin-top: 750px;
-  }
-
-footer {
-    padding-top: 30px;
-}
-.footertekst {
-    margin-left: 130px;
-    line-height: 25px;
-}
-.some {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 650px;
-}
+    address {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
 }
