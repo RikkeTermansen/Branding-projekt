@@ -94,7 +94,7 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/index\ baggrund.png);
+    background-image: url(../img/indexBaggrund.png);
     background-size: cover;
     height: 500px;
     padding: 30px;
@@ -219,7 +219,7 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/produkt\ baggrund.png);
+    background-image: url(../img/produktBaggrund.png);
     background-size: cover;
     height: 500px;
     padding: 30px;
@@ -301,7 +301,7 @@ header a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url(../img/kontakt\ baggrund.png);
+    background-image: url(../img/kontaktBaggrund.png);
     background-size: cover;
     height: 500px;
     padding: 30px;
